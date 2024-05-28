@@ -49,7 +49,7 @@ public class Main {
                         .ifPresent(minTicket -> System.out.println(carrier + " -> " + minTicket.getFlightDuration()));
             }
 
-            System.out.println("Mean - Median = " + (tickets.getMean() - tickets.getMedian()));
+            System.out.println("Mean - Median = " + (tickets.getMean(VvoTlvTickets) - tickets.getMedian(VvoTlvTickets)));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
